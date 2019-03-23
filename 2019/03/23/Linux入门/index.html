@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="linux入门linux服务器搭建工作需要掌握的核心点  虚拟机使用和 linux安装（注意事项） 服务器搭建[重点] 网络配置[真实阿里云服务器以联网] SSH连接远程服务器（putty） FTP文件传输（winscp） 升级python（linux系统默认自带2.7） 虚拟环境管理（virtualenv） django web服务器（nginx+uwsgi）做django项目发布 数据库MyS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/03/23/Linux入门/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="linux入门linux服务器搭建工作需要掌握的核心点  虚拟机使用和 linux安装（注意事项） 服务器搭建[重点] 网络配置[真实阿里云服务器以联网] SSH连接远程服务器（putty） FTP文件传输（winscp） 升级python（linux系统默认自带2.7） 虚拟环境管理（virtualenv） django web服务器（nginx+uwsgi）做django项目发布 数据库MyS">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="c:/Users/ADMINI~1/AppData/Local/Temp/1552382516419.png">
+<meta property="og:image" content="c:/Users/ADMINI~1/AppData/Local/Temp/1552382560033.png">
+<meta property="og:image" content="e:/第九个月数据分析3/md笔记/虚拟机连不上.png">
+<meta property="og:image" content="e:/第九个月数据分析3/md笔记/python解析.png">
+<meta property="og:image" content="c:/Users/ADMINI~1/AppData/Local/Temp/1552468697239.png">
+<meta property="og:image" content="c:/Users/ADMINI~1/AppData/Local/Temp/1552468906400.png">
+<meta property="og:image" content="c:/Users/ADMINI~1/AppData/Local/Temp/1552469004093.png">
+<meta property="og:image" content="e:/第九个月数据分析3/md笔记/yum.png">
+<meta property="og:updated_time" content="2019-03-15T07:44:16.087Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="linux入门linux服务器搭建工作需要掌握的核心点  虚拟机使用和 linux安装（注意事项） 服务器搭建[重点] 网络配置[真实阿里云服务器以联网] SSH连接远程服务器（putty） FTP文件传输（winscp） 升级python（linux系统默认自带2.7） 虚拟环境管理（virtualenv） django web服务器（nginx+uwsgi）做django项目发布 数据库MyS">
+<meta name="twitter:image" content="c:/Users/ADMINI~1/AppData/Local/Temp/1552382516419.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Linux入门" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/23/Linux入门/" class="article-date">
+  <time datetime="2019-03-23T02:09:09.131Z" itemprop="datePublished">2019-03-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="linux入门"><a href="#linux入门" class="headerlink" title="linux入门"></a>linux入门</h2><p>linux服务器搭建工作需要掌握的核心点</p>
+<ol>
+<li><strong>虚拟机使用和</strong></li>
+<li><strong>linux安装（注意事项）</strong></li>
+<li><strong>服务器搭建[重点]</strong><ol>
+<li>网络配置[真实阿里云服务器以联网]</li>
+<li>SSH连接远程服务器（putty）</li>
+<li>FTP文件传输（winscp）</li>
+<li>升级python（linux系统默认自带2.7）</li>
+<li>虚拟环境管理（virtualenv）</li>
+<li>django</li>
+<li>web服务器（nginx+uwsgi）做django项目发布</li>
+<li>数据库MySQL</li>
+<li>DNS解析实现</li>
+<li>nginx多项目配置</li>
+</ol>
+</li>
+</ol>
+<h2 id="虚拟机认识"><a href="#虚拟机认识" class="headerlink" title="虚拟机认识"></a>虚拟机认识</h2><p>重要功能：</p>
+<ul>
+<li>快照功能（保存系统当前状态，后期随时还原）</li>
+<li>克隆（完全复制一份）</li>
+<li>删除虚拟机</li>
+</ul>
+<h2 id="2-安装系统"><a href="#2-安装系统" class="headerlink" title="2.安装系统"></a>2.安装系统</h2><p>虚拟机安装[重要]：<a href="https://blog.csdn.net/qq_39038465/article/details/81478847" target="_blank" rel="noopener">https://blog.csdn.net/qq_39038465/article/details/81478847</a></p>
+<p>安装步骤: <a href="https://blog.csdn.net/babyxue/article/details/80970526" target="_blank" rel="noopener">https://blog.csdn.net/babyxue/article/details/80970526</a></p>
+<ul>
+<li>必须为虚拟机打开网络<ul>
+<li>桥接（虚拟机相当于一台新电脑有独立IP）</li>
+<li>NAP（电脑太多时使用）</li>
+</ul>
+</li>
+<li>硬盘分区<ul>
+<li>boot：系统引导分区（存储是启动相关的核心文件，一般200M或500M）</li>
+<li>swap：内存交换分区(充当内存使用：内存的2倍)</li>
+<li>/根分区：其余所有的空间</li>
+</ul>
+</li>
+<li>记住自己的IP</li>
+</ul>
+<p><strong>查看服务器IP地址</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ifconfig  #192.168.131.132</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-链接"><a href="#3-链接" class="headerlink" title="3.链接"></a>3.链接</h2><p>SSH：是客户端和linux服务器数据传输的加密协议！特点：安全，数据压缩，传输速度快</p>
+<p>ContOS服务器端默认安装了SSH</p>
+<p>Windows电脑需要安装SSH客户端就可以和服务器进行SSH加密通信</p>
+<p><strong>常用的SSH 客户端 Putty</strong></p>
+<p>核心配置(配置IP+端口，窗口显示行列书，配置字体大小，设置支持中文)</p>
+<p><img src="C:\Users\ADMINI~1\AppData\Local\Temp\1552382516419.png" alt="1552382516419"></p>
+<h2 id="4-使用FTP协议传文件"><a href="#4-使用FTP协议传文件" class="headerlink" title="4.使用FTP协议传文件"></a>4.使用FTP协议传文件</h2><p>常用的FTP协议软件：WinScp</p>
+<p><img src="C:\Users\ADMINI~1\AppData\Local\Temp\1552382560033.png" alt="1552382560033"></p>
+<p>在根目录上传一个文件！！！</p>
+<h2 id="5-虚拟机联网"><a href="#5-虚拟机联网" class="headerlink" title="5.虚拟机联网"></a>5.虚拟机联网</h2><ul>
+<li>桥连接（每个l虚拟系统，都相当于一个真实电脑，内网自动分一个IP）</li>
+<li>NTA方式：<ul>
+<li>192.168.43.2–254：该网段可分给1–253台电脑！</li>
+<li>192.168.1–254.1–254：可组建很庞大的内网系统</li>
+</ul>
+</li>
+<li>自连接：只能主机和虚拟机通信！</li>
+<li>建议使用桥接！</li>
+</ul>
+<p><strong>最快联网设置</strong></p>
+<ul>
+<li><ol>
+<li>多台虚拟机都设置为桥接，桥接虚拟机启动时能自动分配内网的IP 地址</li>
+<li>打开虚拟机的联网功能<ol>
+<li>可在安装虚拟机是打开联网按钮</li>
+<li>如果安装时候忘记打开联网功能，安装完登录系统改配置文件！<strong>改配置文件打开联网</strong><br> . 配置IP地址信息：vi    /etc/sysconfig/network-scripts/ifcfg-ens33文件如下配置</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#编辑网络配置文件  vi是编辑文档的命令</span></span><br><span class="line">vi	/etc/sysconfig/network-scripts/ifcfg-ens33</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改内容如下:</span></span><br><span class="line">BOOTPROTO=<span class="string">"static"</span> <span class="comment"># 手动分配ip [改]  原来的动态分配    dhcp</span></span><br><span class="line">ONBOOT=<span class="string">"yes"</span> <span class="comment"># 该网卡是否随网络服务启动 [改]</span></span><br><span class="line">IPADDR=<span class="string">"192.168.8.134"</span> <span class="comment"># 该网卡ip地址就是你要配置的固定IP[加]</span></span><br><span class="line">GATEWAY=<span class="string">"192.168.8.1"</span> <span class="comment"># 网关 [加]</span></span><br><span class="line">NETMASK=<span class="string">"255.255.255.0"</span> <span class="comment"># 子网掩码 [加]</span></span><br><span class="line">DNS1=<span class="string">"192.168.8.1"</span> <span class="comment"># DNS地址 [加]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#IP地址，网关，子网掩码，DNS：可以参考主机设置， ipconfig -all</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#改完重启网络</span></span><br><span class="line">service notwork restart</span><br></pre></td></tr></table></figure>
+<p>DNS和网关信息可在Window电脑，cmd—–&gt;ipconfig中查看</p>
+<p><strong>vi 编辑器使用：</strong></p>
+<ol>
+<li><p>vi 文件名</p>
+</li>
+<li><p>进入编辑模式（i）</p>
+</li>
+<li><p>改</p>
+</li>
+<li><p>Esc退出，:wq保存     :q!不保存直接退出</p>
+</li>
+<li><p>检测网络是否能链接成功：</p>
+<p>ping  地址</p>
+</li>
+</ol>
+<h2 id="6-Linux目录结构【重要】"><a href="#6-Linux目录结构【重要】" class="headerlink" title="6.Linux目录结构【重要】"></a>6.Linux目录结构【重要】</h2><ul>
+<li>软件安装目录：/use/local</li>
+<li>系统配置: /etc</li>
+<li>还可以操作（home，root，opt较少）</li>
+</ul>
+<h2 id="7-下载软件"><a href="#7-下载软件" class="headerlink" title="7.下载软件"></a>7.下载软件</h2><ol>
+<li><p>从yum软件库中下载</p>
+<p>yum软件源，默认是国外服务器，下载慢，建议替换为国内的比如清华</p>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/centos/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/help/centos/</a></p>
+</li>
+<li><p>wget网址下载</p>
+<p>wget <a href="https://www.python.org/ftp/python/" target="_blank" rel="noopener">https://www.python.org/ftp/python/</a></p>
+<p>注意mini版，wget不可用，需要重新安装</p>
+</li>
+<li><p>直接FTP传到服务器</p>
+<p>最快</p>
+</li>
+</ol>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><ol>
+<li>熟悉虚拟机操作（快照，克隆，打开，删除）</li>
+<li>安装系统（网络，系统分区）</li>
+<li>联网（桥接）</li>
+<li>SSH远程链接</li>
+<li>FTP协议</li>
+<li>LInux目录结构</li>
+<li>下载软件</li>
+</ol>
+<h1 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h1><h2 id="问题：服务器虚拟机经常连不上！"><a href="#问题：服务器虚拟机经常连不上！" class="headerlink" title="问题：服务器虚拟机经常连不上！"></a>问题：服务器虚拟机经常连不上！</h2><p><img src="E:\第九个月数据分析3\md笔记\虚拟机连不上.png" alt="1552458181026"></p>
+<p>问题描述:在班级内虚拟机链接正常，回到宿舍连不上！</p>
+<p><strong>原因</strong>：局域网变了，IP地址也自动的发生了变化！因为桥连接，会自动从局域网中分一个IP 地址</p>
+<p><strong>步骤</strong>1：确保联网方式是：桥连接</p>
+<p><strong>步骤2：</strong>从虚拟机登录查看IP</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig   <span class="comment">#查看IP</span></span><br></pre></td></tr></table></figure>
+<p><strong>步骤3：</strong>改网络配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#编辑配置</span><br><span class="line">vi	/etc/sysconfig/entwork-scripts/ifcfg-ens33</span><br><span class="line"></span><br><span class="line">#i  进入编辑模式</span><br><span class="line"></span><br><span class="line">#改</span><br><span class="line">BOOTPROTO=&apos;dhcp&apos;  #IP地址改为动态分配</span><br><span class="line"></span><br><span class="line">注释掉手动设置的IP(网络服务器重启后会自动分配)</span><br><span class="line"># IPADDR=&quot;192.168.220.101&quot; # 该网卡ip地址就是你要配置的固定IP</span><br><span class="line"># GATEWAY=&quot;192.168.220.2&quot; # 网关</span><br><span class="line"># NETMASK=&quot;255.255.255.0&quot; # 子网掩码</span><br><span class="line"># DNS1=&quot;8.8.8.8&quot; # DNS，8.8.8.8为Google提供的免费DNS服务器的IP地</span><br><span class="line">#退出编辑 ESC :wq 退出并退出</span><br><span class="line"></span><br><span class="line">#改完重启网络</span><br><span class="line">service notwork restart</span><br></pre></td></tr></table></figure>
+<p>最后：SSH改IP重新连接</p>
+<h2 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h2><p>centos默认安装python2.7，先了解虚拟机 中pytho的相关信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#查看是否有python</span><br><span class="line">python -v</span><br><span class="line">#查看详细的解析方式</span><br><span class="line">which python</span><br><span class="line">cd /usr/bin</span><br><span class="line">ls -al python* #就可看到 python--&gt;python2---&gt;python2.7</span><br></pre></td></tr></table></figure>
+<p><img src="E:\第九个月数据分析3\md笔记\python解析.png" alt="python解析"></p>
+<p>接下来从网上找详细的流程一定要先确认：是那种安装方式？</p>
+<ul>
+<li>第一种：修改python的指令的软件的链接指向3.6</li>
+<li>第二种：或：添加python3指令，软件连接指向3.6</li>
+</ul>
+<p>选择第一种：详细步骤如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1 下载包管理器:gcc</span></span><br><span class="line">yum -y groupinstall <span class="string">"Development tools"</span></span><br><span class="line"><span class="comment"># 2 下载相关依赖</span></span><br><span class="line">yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-</span><br><span class="line">devel</span><br><span class="line"><span class="comment"># 3. 上传pyton3.6.6.tgz 到安装目录 /usr/local</span></span><br><span class="line">上传...,也可通过wget手动下载到/usr/local</span><br><span class="line"><span class="comment"># 4. 备份默认的python指令的连接!!!!</span></span><br><span class="line">mv /usr/bin/python /usr/bin/python.bak</span><br><span class="line"><span class="comment"># 5. 解压 在安装目录加压</span></span><br><span class="line">cd  /usr/local</span><br><span class="line">tar -zxvf Python<span class="number">-3.6</span><span class="number">.6</span>.tgz  <span class="comment">#多了Python3.6.6 文件夹</span></span><br><span class="line"><span class="comment"># 6.进入 Python3.6.6,</span></span><br><span class="line">cd Python<span class="number">-3.6</span><span class="number">.6</span></span><br><span class="line"><span class="comment"># 编译安装,指定安装路径 ./configure --prefix=安装目录</span></span><br><span class="line">./configure --prefix=/usr/local/python3  <span class="comment">#[管理工具和依赖包必须已经安装好]</span></span><br><span class="line"><span class="comment"># 7. 安装</span></span><br><span class="line">cd Python<span class="number">-3.6</span><span class="number">.6</span></span><br><span class="line">make </span><br><span class="line"><span class="comment"># 安装把安装日志保存起来</span></span><br><span class="line">make install  &gt; my_install.log</span><br><span class="line"><span class="comment"># 把python3/lib 保存到配置文件中，保存在 /etc/ld.so.conf.d中,并执行ldconfig</span></span><br><span class="line">echo <span class="string">"/usr/local/python3/lib"</span> &gt;&gt; /etc/ld.so.conf</span><br><span class="line">ldconfig  </span><br><span class="line"><span class="comment"># 8 .建连接</span></span><br><span class="line">ln -s /usr/local/python3/bin/python3<span class="number">.6</span> /usr/bin/python</span><br><span class="line"><span class="comment"># 测试</span></span><br><span class="line">pythton -V  <span class="comment">#执行3.6.6 表示成功</span></span><br></pre></td></tr></table></figure>
+<p>建立pip软连接</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#建立软连接</span></span><br><span class="line">ln -s /usr/local/python/python3/bin/pip3<span class="number">.6</span> /usr/bin/pip</span><br><span class="line"><span class="comment">#测试pip版本</span></span><br><span class="line">pip -V</span><br><span class="line">pip list <span class="comment">#提示版本太低【pip list可能报错】</span></span><br></pre></td></tr></table></figure>
+<p>pip版本9.0 时pip list可能报错</p>
+<p><img src="C:\Users\ADMINI~1\AppData\Local\Temp\1552468697239.png" alt="1552468697239"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#解决方案:新建</span></span><br><span class="line">vi /etc/pip.conf`</span><br><span class="line"><span class="comment">#添加内容</span></span><br><span class="line">[list]</span><br><span class="line">format=columns</span><br><span class="line">保存退出</span><br></pre></td></tr></table></figure>
+<p><strong>pip版本更新</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+<h2 id="安装虚拟环境"><a href="#安装虚拟环境" class="headerlink" title="安装虚拟环境"></a>安装虚拟环境</h2><p>建议安装虚拟环境，便于管理不同项目</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装 virtualenv</span></span><br><span class="line">pip install virtualenv</span><br><span class="line"><span class="comment">#建立软连接</span></span><br><span class="line">ln -s /usr/local/python3/bin/virtualenv /usr/bin/virtualenv</span><br></pre></td></tr></table></figure>
+<p>安装成功在根目录下建立两个文件夹，主要用于存放env和网站文件的。(名字按照自己习惯来)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#创建报错虚拟环境目录  p参数：如果没有目录就自动创建，递归创建</span></span><br><span class="line">mkdir -p /data/env</span><br><span class="line"><span class="comment">#个人网站发布文件夹，名字都是任意的</span></span><br><span class="line">mkdir -p /data/wwwroot</span><br></pre></td></tr></table></figure>
+<p><strong>创建指定版本的虚拟环境</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入env目录</span></span><br><span class="line">cd /data/env</span><br><span class="line"><span class="comment">#创建虚拟环境</span></span><br><span class="line">virtualenv --python=/usr/bin/python3 pyweb</span><br><span class="line"><span class="comment">#启动</span></span><br><span class="line">cd /data/env/pyweb/bin</span><br><span class="line"><span class="comment">#激活</span></span><br><span class="line">source activate  <span class="comment">#退出 deactivate</span></span><br><span class="line"><span class="comment">#安装django等</span></span><br><span class="line">pip install django</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装uwsgi(web项目发布相关软件)</span></span><br><span class="line">pip install uwsgi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 给uwsgi建立软链接，方便使用</span></span><br><span class="line">ln -s /data/env/py3_django2/bin/uwsgi /usr/bin/uwsgi</span><br><span class="line"></span><br><span class="line"><span class="comment">#退出虚拟环境</span></span><br><span class="line">cd /data/env/pyweb/bin</span><br><span class="line"><span class="comment">#退出</span></span><br><span class="line">deactivate</span><br></pre></td></tr></table></figure>
+<p><strong>本地项目上传到wwwroot目录</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1.在项目根目录生成项目需要的依赖包文档描述！</span></span><br><span class="line">pip freeze &gt; requirements.txt</span><br><span class="line"><span class="comment">#2.</span></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+<p><img src="C:\Users\ADMINI~1\AppData\Local\Temp\1552468906400.png" alt="1552468906400"></p>
+<p>setting**文件常用设置</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#允许所有IP访问一定要加</span></span><br><span class="line">ALLOWED_HOSTS = [<span class="string">'*'</span>]</span><br></pre></td></tr></table></figure>
+<p><strong>上传项目到wwwroot下，启动测试是否正常运行！</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#使用winsip上传到  /data/wwwroot下</span><br><span class="line"></span><br><span class="line">cd /data/env/py_django/bin</span><br><span class="line">source activate  #激活虚拟环境</span><br><span class="line">cd /data/wwwroot/mysite  #进入我的项目目录</span><br><span class="line">#下载当前项目需要的依赖包</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">#生成依赖文件描述：</span><br><span class="line">pip freeze &gt; requirements.txt</span><br><span class="line"></span><br><span class="line">#测试项目能否正常启动</span><br><span class="line">python manage.py runserver</span><br></pre></td></tr></table></figure>
+<p><strong>配置uwsgi</strong></p>
+<p>在mysitede项目根目录，新建mysite.xml配置文件，上传到data/wwwroot/mysite下，内容如下：</p>
+<p><img src="C:\Users\ADMINI~1\AppData\Local\Temp\1552469004093.png" alt="1552469004093"></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;uwsgi&gt;    </span><br><span class="line">   &lt;socket&gt;127.0.0.1:8997&lt;/socket&gt; &lt;!-- 内部端口，自定义 --&gt; </span><br><span class="line">   &lt;chdir&gt;/data/wwwroot/mysite/&lt;/chdir&gt; &lt;!-- 项目路径 --&gt;            </span><br><span class="line">   &lt;module&gt;mysite.wsgi&lt;/module&gt;  &lt;!-- mysite为wsgi.py所在目录名--&gt; </span><br><span class="line">   &lt;processes&gt;4&lt;/processes&gt; &lt;!-- 进程数 --&gt;     </span><br><span class="line">   &lt;daemonize&gt;uwsgi.log&lt;/daemonize&gt; &lt;!-- 日志文件 --&gt;</span><br><span class="line">&lt;/uwsgi&gt;</span><br></pre></td></tr></table></figure>
+<p>保存 注意<module>里的mysite，为wsgi.py所在的目录名</module></p>
+<p><strong>下载nginx安装和配置</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#下载</span></span><br><span class="line">Cd /usr/local</span><br><span class="line">wget http://nginx.org/download/nginx<span class="number">-1.13</span><span class="number">.7</span>.tar.gz</span><br><span class="line"><span class="comment">#解压</span></span><br><span class="line">tar -zxvf nginx<span class="number">-1.13</span><span class="number">.7</span>.tar.gz</span><br><span class="line"><span class="comment">#安装：进入解压后的nginx-1.13.7.tar.gz</span></span><br><span class="line"><span class="comment">#进入目录</span></span><br><span class="line">cd nginx<span class="number">-1.13</span><span class="number">.7</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"></span><br><span class="line"><span class="comment">#依次执行以下命令</span></span><br><span class="line">./configure --prefix=/usr/local/nginx</span><br><span class="line">make</span><br><span class="line">make install &gt; my_nginx.log</span><br><span class="line"><span class="comment"># nginx一般默认安装好的路径为/usr/local/nginx在/usr/local/nginx/conf/中先备份一下</span></span><br><span class="line">nginx.conf文件，以防意外。</span><br><span class="line">cd /usr/local/nginx/conf/</span><br><span class="line">cp nginx.conf nginx.conf.bak</span><br><span class="line"><span class="comment"># 然后打开nginx.conf，把原来的内容删除，直接加入以下内容：</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  <span class="number">1024</span>;</span><br><span class="line">&#125;</span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">    sendfile        on;</span><br><span class="line">    server &#123;</span><br><span class="line">        listen <span class="number">80</span>;</span><br><span class="line">        server_name  自己的域名; <span class="comment">#改为自己的域名，没域名修改为127.0.0.1:80</span></span><br><span class="line">        charset utf<span class="number">-8</span>;</span><br><span class="line">        location / &#123;</span><br><span class="line">           include uwsgi_params;</span><br><span class="line">           uwsgi_pass <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">8000</span>;  <span class="comment">#端口要和uwsgi里配置的一样</span></span><br><span class="line">           uwsgi_param UWSGI_SCRIPT mysite.wsgi;  <span class="comment">#wsgi.py所在的目录名+.wsgi</span></span><br><span class="line">           uwsgi_param UWSGI_CHDIR /data/wwwroot/mysite/; <span class="comment">#项目路径</span></span><br><span class="line">           </span><br><span class="line">        &#125;</span><br><span class="line">        location /static/ &#123;</span><br><span class="line">        alias /data/wwwroot/mysite/static/; <span class="comment">#静态资源路径</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#启动，执行./nginx -t命令先检查配置文件是否有错，没有错就执行以下命令：</span></span><br><span class="line">cd /usr/local/nginx/sbin/</span><br><span class="line">./nginx</span><br><span class="line"><span class="comment">#终端没有任何提示就证明nginx启动成功</span></span><br><span class="line"><span class="comment">#测试</span></span><br><span class="line">curl <span class="number">127.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">80</span>  就可以看到网站</span><br></pre></td></tr></table></figure>
+<p><strong>启动项目</strong></p>
+<p>启动django项目[最终]</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入djnago项目</span></span><br><span class="line">cd /data/wwwroot/mysite/</span><br><span class="line"><span class="comment"># uwsgi 解析项目中的配置文件</span></span><br><span class="line">uwsgi -x mysite.xml</span><br><span class="line"><span class="comment">#以上步骤都没有出错的话。</span></span><br><span class="line">cd /usr/local/nginx/sbin/</span><br><span class="line"><span class="comment"># 重启nginx</span></span><br><span class="line">./nginx -s reload</span><br><span class="line"><span class="comment"># 服务器内部测试是否发布成功</span></span><br><span class="line">curl <span class="number">1270.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">80</span> <span class="comment">#就可以看到网站!</span></span><br><span class="line"><span class="comment"># 关闭防火墙,否则远程不能访问!</span></span><br><span class="line">systemctl stop firewalld.service</span><br></pre></td></tr></table></figure>
+<p>本地测试<br><a href="http://192.168.8.135" target="_blank" rel="noopener">http://192.168.8.135</a> 就可以看到图书首页!<br>查看软件端口<br>通过监控端口命令,查看程序是否启动.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看进程端口号及运行的程序</span></span><br><span class="line">netstat -atunp</span><br><span class="line"><span class="comment">#由端口号port(8000)查看进程id</span></span><br><span class="line">netstat -anp |grep <span class="number">8000</span></span><br><span class="line"><span class="comment">#停止</span></span><br><span class="line"><span class="comment">#杀死指定进程根据pid(进程id) uwsgi</span></span><br><span class="line">kill pid</span><br><span class="line"><span class="comment">#强制杀死指定进程根据pid(进程id) nginx</span></span><br><span class="line">kill <span class="number">-9</span> pid</span><br></pre></td></tr></table></figure>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h2 id="1-安装python3-6后yum命令无法使用"><a href="#1-安装python3-6后yum命令无法使用" class="headerlink" title="1.安装python3.6后yum命令无法使用"></a>1.安装python3.6后yum命令无法使用</h2><p>这是因为yum采用python作为命令解释器，原来系统自带的python解释器为python2.7，然后我之前为了方便将<br>python默认的解释器设为了python3.6，导致按python3.6解析2.7的语法出错了。</p>
+<p>解决方法：<br>修改/usr/bin/yum文件中的第一行为#!/usr/bin/python2.7</p>
+<h2 id="服务器环境测试"><a href="#服务器环境测试" class="headerlink" title="服务器环境测试"></a>服务器环境测试</h2><p>检测当前服务器的环境,查看已经安装了哪些软件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 主机网址</span></span><br><span class="line">ipconfig -all</span><br><span class="line"><span class="comment"># 虚拟机联网方式: 桥接</span></span><br><span class="line"><span class="comment"># 查看虚拟机IP</span></span><br><span class="line">ifconfig <span class="comment"># IP前3都一样,网络肯定正常!</span></span><br><span class="line"><span class="comment"># 不正常时:看网络配置文件是否是动态分配IP: dhcp</span></span><br><span class="line">cat /etc/sysconfig/network-scripts/ifcfg-ens33</span><br><span class="line"><span class="comment"># python是否安装</span></span><br><span class="line">python -V</span><br><span class="line"><span class="comment"># 查看python命令如何解析</span></span><br><span class="line">which python <span class="comment">#找到命令位置 /usr/bin</span></span><br><span class="line">cd /usr/bin</span><br><span class="line">ls -al python* <span class="comment"># 重点:3.6的实际安装路径</span></span><br><span class="line"><span class="comment"># 查pip命令如何解析</span></span><br><span class="line">which pip</span><br><span class="line">cd /usr/bin</span><br><span class="line">ls -al pip*</span><br><span class="line"><span class="comment"># 查Python安了哪些包</span></span><br><span class="line">pip list <span class="comment">#检查是否安装了 virtualenv</span></span><br><span class="line"><span class="comment"># 查虚拟环境能用?</span></span><br><span class="line">virtualenv --version</span><br><span class="line"><span class="comment"># 虚拟目录和项目发布目录? 我的习惯(/data/env+wwwroot)</span></span><br><span class="line">cd /data</span><br><span class="line"><span class="comment">#进入虚拟环境,检测软件</span></span><br><span class="line">pip list</span><br><span class="line"><span class="comment"># 检测uwsgi是否可用</span></span><br><span class="line">uwsgi</span><br><span class="line">which uwsgi</span><br><span class="line">cd /usr/bin</span><br><span class="line">ls -al uwsgi*</span><br><span class="line"><span class="comment"># nginx是否安装?</span></span><br></pre></td></tr></table></figure>
+<h2 id="MySQL安装"><a href="#MySQL安装" class="headerlink" title="MySQL安装"></a>MySQL安装</h2><p>centos7 的yum源仓库包默认不支持mysql, 需要手动添加mysql官方yum仓库<br>yum指令不能使用<br>yum解析是默认依赖python2.7<br>语法错误</p>
+<p><img src="E:\第九个月数据分析3\md笔记\yum.png" alt="1552561609134"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#编辑源码</span></span><br><span class="line">vi /usr/bin/yum</span><br><span class="line"><span class="comment">#第一行明确指定python版本未python2</span></span><br><span class="line">改为 !</span><br></pre></td></tr></table></figure>
+<p><strong>改密码</strong></p>
+<p>修改允许root远程访问</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">use mysql <span class="comment"># 切换库</span></span><br><span class="line">select host, user <span class="keyword">from</span> user; <span class="comment">#查</span></span><br><span class="line">update user set host = <span class="string">'%'</span> where user = <span class="string">'root'</span>; <span class="comment">#改</span></span><br><span class="line">flush privileges; <span class="comment">#刷新</span></span><br><span class="line">sudo service mysqld restart <span class="comment">#重启mysql</span></span><br><span class="line">systemctl stop firewalld.service <span class="comment">#关防火墙</span></span><br></pre></td></tr></table></figure>
+<p>卸载<strong>mysql</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">- 移除mysql</span><br><span class="line">yum remove mysql-community-client mysql-community-common mysql-community-libs</span><br><span class="line">mysql-community-libs-compat mysql-community-server mysql57-community-release</span><br><span class="line">- 删配置</span><br><span class="line">rm -rf /var/lib/mysql</span><br><span class="line">rm /etc/my.cnf</span><br><span class="line">- 查看安装</span><br><span class="line">rpm -qa | grep -i mysql</span><br><span class="line">rpm -e mysql57-community-release-el7<span class="number">-9.</span>noarch</span><br><span class="line">rpm -e mysql-community-server<span class="number">-5.7</span><span class="number">.17</span><span class="number">-1.</span>el7.x86_64</span><br><span class="line">rpm -e mysql-community-libs<span class="number">-5.7</span><span class="number">.17</span><span class="number">-1.</span>el7.x86_64</span><br><span class="line">rpm -e mysql-community-libs-compat<span class="number">-5.7</span><span class="number">.17</span><span class="number">-1.</span>el7.x86_64</span><br><span class="line">rpm -e mysql-community-common<span class="number">-5.7</span><span class="number">.17</span><span class="number">-1.</span>el7.x86_64</span><br><span class="line">rpm -e mysql-community-client<span class="number">-5.7</span><span class="number">.17</span><span class="number">-1.</span>el7.x86_64</span><br><span class="line">cd /var/lib/</span><br><span class="line">rm -rf mysql/</span><br><span class="line">- 清楚其他的</span><br><span class="line">whereis mysql</span><br><span class="line">whereis mysql</span><br><span class="line">mysql: /usr/bin/mysql /usr/lib64/mysql /usr/local/mysql /usr/share/mysql</span><br><span class="line">/usr/share/man/man1/mysql<span class="number">.1</span>.gz</span><br><span class="line"><span class="comment">#删除上面的文件夹</span></span><br><span class="line">rm -rf /usr/bin/mysql</span><br></pre></td></tr></table></figure>
+<p><strong>防火墙配置</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">CentOS <span class="number">7.0</span>默认使用的是firewall作为防火墙，使用iptables必须重新设置一下</span><br><span class="line"><span class="number">1</span>、直接关闭防火墙</span><br><span class="line">systemctl stop firewalld.service <span class="comment">#停止firewall</span></span><br><span class="line">systemctl disable firewalld.service <span class="comment">#禁止firewall开机启动</span></span><br><span class="line"><span class="number">2</span>、设置 iptables service</span><br><span class="line">yum -y install iptables-services</span><br><span class="line">如果要修改防火墙配置，如增加防火墙端口<span class="number">3306</span></span><br><span class="line">vi /etc/sysconfig/iptables</span><br><span class="line">增加规则</span><br><span class="line">-A INPUT -m state --state NEW -m tcp -p tcp --dport <span class="number">3306</span> -j ACCEPT</span><br><span class="line">保存退出后</span><br><span class="line">systemctl restart iptables.service <span class="comment">#重启防火墙使配置生效</span></span><br><span class="line">systemctl enable iptables.service <span class="comment">#设置防火墙开机启动</span></span><br><span class="line">最后重启系统使设置生效即可。</span><br></pre></td></tr></table></figure>
+<p>详细参考Django中文网</p>
+<p><a href="https://www.django.cn/article/show-2.html" target="_blank" rel="noopener">https://www.django.cn/article/show-2.html</a></p>
+<p>错误<br>yum 指令运行时有可能会提示语法错误!<br>如果有语法错误,把yum文件头编译的环境指定为python2<br>启动和停止服务</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看启动状态</span></span><br><span class="line">sudo service mysqld status</span><br><span class="line"><span class="comment">#启动(默认随着系统自动启动了)</span></span><br><span class="line">sudo service mysqld start</span><br><span class="line"><span class="comment">#停止</span></span><br><span class="line">sudo service mysqld sto</span><br></pre></td></tr></table></figure>
+<h3 id="生产环境介绍"><a href="#生产环境介绍" class="headerlink" title="生产环境介绍"></a>生产环境介绍</h3><p>工作中项目发布真实服务器环境<br>域名(万网/阿里云购买)<br>云服务器(阿里云/华为云/百度云)<br>域名解析到服务器(DNS解析)<br>买域名<br>一级域名: <a href="http://www.zhouzhengyang.cn" target="_blank" rel="noopener">www.zhouzhengyang.cn</a><br>不带www叫子域名可以包含N个: m.zhouzhengyang.cn<br>django.zhouzhengyang.cn<br>阿里购买地址:<br><a href="https://developer.huaweicloud.com/campus" target="_blank" rel="noopener">https://developer.huaweicloud.com/campus</a><br><a href="https://wanwang.aliyun.com/?utm_content=se_1000301943" target="_blank" rel="noopener">https://wanwang.aliyun.com/?utm_content=se_1000301943</a><br>买服务器<br>阿里云<br><a href="https://www.aliyun.com/?utm_content=se_1000301881" target="_blank" rel="noopener">https://www.aliyun.com/?utm_content=se_1000301881</a><br>DNS解析<br>域名解析到服务器叫:DNS解析<br>登陆域名管理平台!</p>
+<h2 id="阿里云解析过程"><a href="#阿里云解析过程" class="headerlink" title="阿里云解析过程"></a>阿里云解析过程</h2><p>实现：输入<a href="http://www.haochunhu.cn" target="_blank" rel="noopener">www.haochunhu.cn</a> 自动打开我的网站</p>
+<p><strong>前提:</strong></p>
+<ul>
+<li>购买<a href="http://www.haochunhu.cn域名" target="_blank" rel="noopener">www.haochunhu.cn域名</a></li>
+<li>购买：阿里云服务器：39.96.170.166</li>
+<li>进入阿里云后台进行DNS解析！</li>
+<li>解析之前：需要完成备案！</li>
+<li></li>
+</ul>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><p>解压tar.xz使用 xz -d 命令解压出tar包</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1</span> xz -d Python<span class="number">-3.6</span><span class="number">.6</span>.tar.xz</span><br><span class="line"><span class="comment">#tar包解压</span></span><br><span class="line">tar - xvf python<span class="number">-3.6</span><span class="number">.6</span>.tar</span><br><span class="line"><span class="comment">#查找</span></span><br><span class="line">find /-name*libsqlite3.so*</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/23/Linux入门/" data-id="cjtkw2ksg0001icu06lqgq2v8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/23/Linux入门/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/22/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
